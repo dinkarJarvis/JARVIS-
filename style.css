@@ -98,3 +98,247 @@ body{
     opacity:.9;
 
 }
+
+/* =========================================
+   AI CORE
+========================================= */
+
+.core{
+
+    position:relative;
+
+    width:280px;
+    height:280px;
+
+    margin:45px 0;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+.ring{
+
+    position:absolute;
+
+    border:2px solid #00e5ff;
+
+    border-radius:50%;
+
+    animation:rotate 12s linear infinite;
+
+}
+
+.ring1{
+
+    width:280px;
+    height:280px;
+
+}
+
+.ring2{
+
+    width:220px;
+    height:220px;
+
+    animation-direction:reverse;
+    animation-duration:8s;
+
+}
+
+.ring3{
+
+    width:160px;
+    height:160px;
+
+    animation-duration:5s;
+
+}
+
+.center{
+
+    width:100px;
+    height:100px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#00d9ff,#006eff);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+    font-weight:bold;
+
+    color:white;
+
+    box-shadow:
+    0 0 20px #00e5ff,
+    0 0 50px #00e5ff,
+    0 0 90px #00e5ff;
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+#status{
+
+    font-size:20px;
+
+    color:#00e5ff;
+
+    margin-bottom:18px;
+
+    text-shadow:0 0 12px #00e5ff;
+
+}
+
+/* =========================================
+   RESPONSE BOX
+========================================= */
+
+#response{
+
+    width:90%;
+    max-width:700px;
+
+    min-height:80px;
+
+    padding:20px;
+
+    border:1px solid rgba(0,229,255,.35);
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    margin-bottom:30px;
+
+    overflow-wrap:break-word;
+
+}
+
+/* =========================================
+   MICROPHONE BUTTON
+========================================= */
+
+#micButton{
+
+    width:80px;
+    height:80px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:34px;
+
+    color:white;
+
+    background:#00bfff;
+
+    box-shadow:
+    0 0 20px #00e5ff,
+    0 0 45px #00e5ff;
+
+    transition:.3s;
+
+}
+
+#micButton:hover{
+
+    transform:scale(1.08);
+
+}
+
+#micButton:active{
+
+    transform:scale(.94);
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:768px){
+
+.logo{
+
+    font-size:42px;
+
+    letter-spacing:6px;
+
+}
+
+.subtitle{
+
+    font-size:15px;
+
+}
+
+.core{
+
+    width:220px;
+    height:220px;
+
+}
+
+.ring1{
+
+    width:220px;
+    height:
